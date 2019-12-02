@@ -1,0 +1,65 @@
+.sidebar{
+    height: 100%;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: lightgray; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+#main{
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+
+}
+#home{
+    height: 20px;
+    width: 20px;
+}
+
+#adduser{
+    height: 20px;
+    width: 20px;
+}
+
+#issue{
+    height: 20px;
+    width: 20px;
+}
+
+#logout{
+    height: 20px;
+    width: 20px;
+}
+
+h2{
+font-family:'Tahoma';
+    font-size: 25px ;
+    color:white;
+    background-color:black;
+    padding: 30px;
+
+}
+
+#whitebugimg{
+    width:30px;
+    height:30px;
+}
