@@ -22,7 +22,7 @@ window.onload = function() {
                 var response = httpRequest.responseText;
                 if(response) {
                     alert("Login successful");
-                    window.location = "test.html";
+                    window.location = "homepage.html";
                 }
             } else {
                 alert('There was a problem with the request.');

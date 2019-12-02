@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles/createissuestyle.css" media="screen">
+  </head>
+  <div id="header">
+    <h2><img src="images/whitebug.png" alt="bug icon"  id ="whitebugimg">  BugMe Issue Tracker</h2>
+  </div>
+  <div class="sidenav">
+    <a href="homepage.html"><img src="images/home.png" alt="home icon"  class="img" id ="home">Home</a>
+    <br>
+    <a href="newuser.html"><img src="images/adduser.png" alt="add user icon"  class="img" id="adduser">Add User</a>
+    <br>
+    <a href="createissue.html"><img src="images/newissue.png" alt="new issue icon"  class="img" id ="issue">New Issue</a>
+    <br>
+    <a href="logout.php"><img src="images/logout.jpg" alt="logout icon"  class="img" id ="logout">Logout</a>
+  </div>
+  <body>
+    <div class="container">
+      <h1>Create Issue</h1>
+      <form id="myform" action="createissue.php" method="post" novalidate>
+
+        <div class="form-field">
+          <label for="title">Title </label>
+          <input type="text" id="title" name="title" required>
+        </div>
+
+        <div class="form-field">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Write a description" required></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="assign">Assigned To</label>
+          <select id="assign" name="assign" required>
+            
+            
+            
+          </select>
+        </div>
+        
+        <div class="form-field">
+          <label for="type">Type</label>
+          <select id="type" name="type" required>
+            
+            <option value="bug">Bug</option>
+            <option value="proposal">Proposal</option>
+            <option value="task">Task</option>
+            
+          </select>
+        </div>
+        
+        <div class="form-field">
+          <label for="priority">Priority</label>
+          <select id="priority" name="prority" required>
+            
+            <option value="minor">Minor</option>
+            <option value="major">Major</option>
+            <option value="critical">Critical</option>
+            
+          </select>
+        </div>
+    
+        <button type="submit" name="submitBtn" class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
